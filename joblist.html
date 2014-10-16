@@ -1,0 +1,47 @@
+<?php
+include 'jobsdb.php';
+getjobs();
+$result = getjobs();
+
+?>
+<html>
+<head>
+	<h1><center><b>Job List</b></h1>	<body>
+		
+		<P STYLE="border: solid #CCEE00 5px">
+<?php
+while($row=mysqli_fetch_assoc($result))
+{
+echo "Job title" . $row['title'] ."<br>" ;
+echo "Employer" . $row['employer'] ."<br>" ;
+echo "Location" . $row['location'] ."<br>" ;
+	/*			Employer<br>
+    			Location<br>
+  
+		</P>
+		<P STYLE="border: solid #BB11FE 5px">
+
+	      		Job title<br>
+				Employer<br>
+    			Location<br>
+  
+		</P> 
+		<P STYLE="border: solid #FF00FF 5px">
+
+	      		Job title<br>
+				Employer<br>
+    			Location<br>
+  
+		</P> 
+
+ 	
+  */
+	}
+?>
+  
+		
+		
+		
+	</body>
+</head>
+</html>
