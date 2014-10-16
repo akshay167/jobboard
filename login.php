@@ -19,3 +19,10 @@ header("Refresh: 2; url=login.html");
 echo $error;
 }
 ?>
+<!--
+git add .
+git commit -m"comment"
+git pull origin master
+git push -u master
+
+-->
